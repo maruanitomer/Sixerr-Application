@@ -1,0 +1,132 @@
+.order-item {
+    border: $border;
+
+    position: relative;
+    color: $darkColor;
+    margin-bottom: 0.5rem;
+    
+    .item-color {
+        // background-color: red;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 0.25rem;
+    }
+
+    .order-top {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 3fr;
+        
+        .order-img {
+            
+            grid-column: 1 / 2;
+            width: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        
+        p {
+            margin: 0.25rem 0;
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .order-buyer-wrapper{
+            padding-inline-start: 1rem;
+            img {
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .order-price, .order-date {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-inline-start: 1rem;
+        }
+        
+        .order-buyer {
+            padding-inline-start: 0.5rem;
+
+            span {
+                text-transform: capitalize;
+            }
+        }
+        .order-date .clock {
+            margin-inline-end: 0.25rem;
+            font-size: 1rem;
+        }
+        
+        
+        .gig {
+            grid-column: 2 / 3;
+        }
+    }
+    .order-bottom {
+        padding: 0.5rem 1rem;
+        // border-top: $border;
+        grid-column: 1 / -1 ;
+
+        p {
+            margin: 0;
+        }
+        
+        .order-status {
+            span {
+                width: 5rem;
+                text-align: center;
+                font-size: 0.75rem;
+                font-weight: bold;
+                padding: 0.25rem 0.5rem;
+                margin-inline-end: 1rem;
+                background-color: $greenColor;
+                color: $lightColor;
+                border-radius: 2rem;
+            }
+        }
+    }
+    button {
+        background-color: #fff;
+        color: $greenColor;
+        width: 9rem;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.5rem 1.25rem;
+        border-radius: 0.375rem;
+        border: 2px solid $greenColor;
+
+        transition: .2s;
+        &:hover {
+            background-color: $greenColor;
+            color: $lightColor;
+        }
+    }
+    
+}
+
+.alert-enter {
+    opacity: 0;
+}
+.alert-enter-active {
+    opacity: 1;
+    transition: 1s;
+}
+.alert-exit {
+    opacity: 1;
+}
+.alert-exit-active {
+    opacity: 0;
+    transition: 1s;
+}

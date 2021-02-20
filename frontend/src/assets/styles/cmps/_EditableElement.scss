@@ -1,0 +1,14 @@
+.content-edit-wrapper {
+
+    color: $darkColor;
+    & > * {padding: 5px;}
+
+    .action-button {
+        cursor: pointer;
+        transition: .2s;
+        
+        &:hover {
+            color: darken($darkColor, 10)
+        }
+    }
+}

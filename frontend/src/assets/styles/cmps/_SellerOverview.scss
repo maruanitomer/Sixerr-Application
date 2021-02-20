@@ -1,0 +1,64 @@
+.seller-overview {
+    display: flex;
+    align-items: center;
+    padding-block-end: rem(24px);
+    > * {
+        margin-inline-end: 0.3rem;
+    }
+    .owner-fullname {
+        color: #404145;
+        font-weight: bold;
+        font: 400 16px/24px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: rem(14px);
+    }
+
+    .order-count {
+        color: rgb(192, 192, 192);
+        // padding-block-start: rem(2px);
+        padding-top: rem(3.1px);
+    }
+    .avatar {
+        width: rem(32px);
+        height: rem(32px);
+    }
+    .info {
+        padding-inline-start: rem(5px);
+        .owner-fullname {
+            padding-inline-end: rem(5px);
+        }
+        .space {
+            padding-inline-start: rem(5px);
+            padding-block-end: 1px;
+        }
+    }
+
+    .seller-stars-container {
+        display: flex;
+        align-items: center;
+        svg,
+        span {
+            color: #ffbf00;
+            font-weight: 700;
+            // margin-inline-start: rem(2px);
+            margin-block-start: rem(1px);
+            margin-inline-start: 0.2rem;
+        }
+        span {
+            margin-block-start: rem(2.5px);
+            margin-inline-start: 0.3125rem;
+        }
+    }
+    .level {
+        padding-inline-start: rem(1px);
+        font-size: 14px;
+        color: #62646a;
+    }
+    .total-reviews {
+        padding-block-start: 0.102531rem;
+        color: #62646a;
+    }
+    .space-end{
+        padding-top: 1px;
+    }
+}

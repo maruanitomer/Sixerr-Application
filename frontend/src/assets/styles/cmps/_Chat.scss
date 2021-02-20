@@ -1,0 +1,34 @@
+.chat-wrapper {
+    .contact-info{
+        margin-bottom: 20px;
+    }
+    .chat-container{
+        .logged-user{
+            display: inline-block;
+            margin-bottom: rem(5px);
+            font-size: rem(14px);
+            padding: rem(8px) rem(10px) rem(8px) rem(10px);
+            border-radius: rem(20px);
+            background-color: #fbfbfb;
+            border: 1.5px solid #1dbf73;
+            margin-left: rem(10px);
+        }
+    }
+    .contact-user-chat{
+        padding-top: rem(10px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .contact-user{
+            margin-top: rem(5px);
+            font-size: rem(14px);
+            padding: rem(8px) rem(10px) rem(8px) rem(10px);
+            border-radius: rem(20px);
+            border: 1.5px solid #6301ee;
+            display: inline;
+            background-color: #fbfbfb;
+            margin-right: 10px;
+        }
+     
+    }
+}

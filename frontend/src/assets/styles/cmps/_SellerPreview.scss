@@ -1,0 +1,97 @@
+.about-seller-container {
+    padding-block-start: 45px;
+    h2 {
+        color: #404145;
+        margin: 0;
+        padding-block-end: rem(25px);
+        font-size: rem(20px);
+        line-height: rem(28px);
+        padding-inline-end: rem(25px);
+    }
+    .content {
+        padding-inline-start: rem(15px);
+        a {
+            display: block;
+            color: #62646a;
+            font-weight: 700;
+            padding-inline-end: rem(25px);
+        }
+        .stars-container {
+            align-items: center;
+            svg {
+                margin-inline-end: rem(3px);
+                color: #ffbf00;
+                font-weight: 700;
+            }
+        }
+        .contact-btn-div {
+            margin-block-start: rem(18px);
+        }
+        button {
+            margin-block-start: rem(20px);
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #62646a;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 130px;
+            @include defButton;
+            background-color: white;
+            color: #62646a;
+            font-size: rem(15px);
+            padding-block-end:rem(2px) ;
+            &:hover{
+                color: #fff;
+                background: #7a7d85;
+            }
+        }
+        
+    }
+    .content {
+        padding-block-end: rem(15px);
+        span{
+            color:#62646a;
+        }
+        .seller-fullname{
+            text-transform: capitalize;
+        }
+    }
+}
+
+.seller-img-container {
+    width: 110px;
+    height: 110px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.seller-stats {
+    font-size: 1rem;
+    margin: 0;
+    border: 1px solid #dadbdd;
+    padding: 1rem;
+    .user-stats {
+        div {
+            flex-grow: 1;
+            padding: 0.5rem;
+        }
+        // border-bottom: 1px solid grey;
+        span{
+            color:#7a7d85;
+        }
+    }
+    .bold {
+        display: block;
+        padding-top: 4px;
+        color: #62646a;
+        padding-block-start: 0;
+        padding-block-end: 1rem;
+    }
+    p{
+        color: #62646a;
+    }
+}

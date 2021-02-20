@@ -1,0 +1,39 @@
+/* HELPERS */
+.debug > * {border: 1px solid orange;}
+.flex { display: flex;}  
+.flex.column { flex-direction: column;}  
+.flex.wrap{ flex-wrap: wrap;}
+.flex.justify-center { justify-content: center;}  
+.flex.space-between { justify-content: space-between;}  
+.flex.space-around { justify-content: space-around;}  
+.flex.align-center { align-items: center; }  
+.flex.align-base { align-items: baseline; }  
+.inline { display: inline; }  
+.inline-block { display: inline-block; }  
+.block { display: block; }
+.rounded { border-radius: 4px; }
+.mrg-top { margin-top: 20px; }
+.mrg-bottom { margin-bottom: 20px; }
+.mrg-start { margin-inline-start: 10px; }  
+.mrg-end { margin-inline-end: 10px; }  
+.clean-list { list-style-type: none; margin: 0;
+  padding: 0; }
+
+.bold { font-weight: bold; }  
+.non-bold { font-weight: normal; }  
+.pointer { cursor: pointer; }
+.fast-trans { transition: .3s; }
+.qoute { font-style: italic; }
+.qoute::after { content: "'"; }
+.qoute::before { content: "'"; }
+.fit-content { height: fit-content; }
+.pad5 { padding: 5px; }
+.pad10 { padding: 10px; }
+.shadow {
+    box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+.green { color: $greenColor; }
+.light-grey { color: $headerColor; }

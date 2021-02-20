@@ -1,0 +1,277 @@
+.chackout-container {
+    padding-top: rem(20px);
+    font-size: 14px;
+    .hide {
+        display: none;
+    }
+    .info:hover + .hide {
+        display: block;
+        color: yellowgreen;
+    }
+}
+.requirements {
+    font-size: rem(15px);
+    padding: rem(15px);
+    margin-top: rem(20px);
+    background-color: #1dbf73;
+    color: #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+    font-weight: 400;
+    width: 75%;
+    a {
+        border-bottom: 1px solid #fdfdfd;
+        cursor: pointer;
+    }
+    span {
+        margin-inline-end: rem(10px);
+    }
+    .MuiSvgIcon-root {
+        padding-bottom: 8px;
+        margin-top: 7p;
+        margin-top: 2.7px;
+    }
+}
+select {
+    border: 0.1px solid #b7b7b7;
+}
+.content-container {
+    padding: rem(20px);
+    padding-block-start: 40px;
+    display: grid;
+    grid-template-columns: 12fr 4.5fr;
+    .content {
+        h3 {
+            margin: 0;
+            padding-bottom: 2.2rem;
+            span {
+                font-size: rem(28px);
+                font-weight: 700;
+                color: #404145;
+            }
+        }
+        .summery {
+            padding-block-start: rem(10px);
+
+            .pricing {
+                min-width: 100px;
+                margin-inline-start: rem(16px);
+                span {
+                    color: #62646a;
+                    padding-inline-end: rem(6px);
+                    font-weight: 600;
+                }
+            }
+        }
+        .price {
+            display: none;
+            font-weight: 500;
+            padding-inline-start: rem(6px);
+        }
+        .included {
+            color: #1dbf73;
+            margin-block-start: rem(50px);
+            border-bottom: 1px solid #1dbf73;
+            cursor: pointer;
+            user-select: none;
+        }
+        .stars-container {
+            padding-block-start: rem(2.9px);
+
+            align-items: center;
+            .rate {
+                padding-left: 5px;
+                color: #62646a;
+                font-weight: 700;
+                font-size: 16px;
+                margin-top: -3.5px;
+            }
+            svg {
+                color: #ffbf00;
+            }
+            .total-reviews {
+                // margin-bottom: rem(2.45px);
+                margin-bottom: 0.2373046804rem;
+                color: #95979d;
+                font-weight: 500;
+                font-size: 14px;
+                padding-inline-start: rem(4px);
+            }
+            .total-stars{
+                padding-left: 2px;
+                margin-bottom: 4px;
+            }
+        }
+        .gig-img-container {
+            margin-inline-end: rem(10px);
+            padding-left: 0;
+            width: 150px;
+            height: 92.594px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .title {
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: -5px;
+            padding-bottom: 5px;
+            color: #62646a;
+            max-width: 345px;
+            font-weight: 700;
+            padding-top: rem(4px);
+            margin-bottom: rem(10px);
+        }
+        .features-container {
+            flex-direction: column;
+            padding-block-start: rem(10px);
+            .package-fuetures-list {
+                padding-block-start: rem(10px);
+                padding-inline-end: rem(15px);
+                font-weight: 500;
+                .MuiSvgIcon-root {
+                    margin-right: rem(4px);
+                    color: rgb(29, 191, 115);
+                }
+                li{
+                    color: #595c67;
+                }
+            }
+            .gig-title {
+                font-size: 16px;
+                font-weight: 600;
+                color: #404145;
+                padding-block-start: rem(5px);
+                padding-block-end: rem(8px);
+            }
+        }
+    }
+    .checkout-bar {
+        height: 326px;
+        border: 1px solid lightGrey;
+        padding: rem(16px);
+        flex-direction: column;
+        .wont-be-charged {
+            padding: 0;
+            span {
+                color: #828386;
+                font-size: rem(12px);
+            }
+        }
+        .fee {
+            margin-bottom: rem(16px);
+        }
+        .payment-summery {
+            margin-top: rem(16px);
+        }
+        .MuiSvgIcon-root {
+            font-size: rem(15px);
+        }
+        h6 {
+            margin: 0;
+            line-height: 14px;
+            font-size: rem(18px);
+            padding-block-end: rem(14px);
+            font-weight: 700;
+            color: #404145;
+        }
+        div {
+            padding-top: rem(10px);
+            padding-bottom: rem(10px);
+            span {
+                // font-size: 14px;
+                color: #62646a;
+                font-size: rem(15px);
+                font-weight: 500;
+                // color
+            }
+        }
+        .border {
+            border-bottom: 0.5px solid lightGrey;
+            padding: 0;
+        }
+        .buy-btn-container {
+            button {
+            // margin-bottom: rem(-10px);
+                @include defButton;
+                width: 100%;
+                &:hover {
+                    background-color: #3fca89;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .chackout-container {
+        .requirements {
+            width: 75%;
+            flex-direction: column;
+            align-items: center;
+            .MuiSvgIcon-root {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .chackout-container {
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            .checkout-bar {
+                margin-top: rem(30px);
+            }
+        }
+        .pricing {
+            display: grid;
+        }
+        .requirements {
+            padding: 5px;
+            padding-bottom: 7px;
+        }
+    }
+}
+
+@media screen and (max-width: $smallLayout) {
+    .chackout-container {
+        font-size: 15px;
+        .pricing {
+            display: flex;
+            flex-direction: column;
+        }
+        .content-container {
+            padding: 0;
+            h3 {
+                padding-bottom: 1.25rem !important;
+            }
+        }
+        .requirements {
+            width: 92%;
+            margin-bottom: 20px;
+            span {
+                text-align: center;
+            }
+            a {
+                font-weight: 700;
+            }
+        }
+        .checkout-bar {
+            height: fit-content;
+            margin-bottom: rem(8px);
+            span {
+                font-size: 16.45px !important;
+            }
+            div {
+                padding-block-end: 0;
+            }
+        }
+        .price {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.review-stats-header {
+    padding-block-start: rem(30px);
+    h2 {
+        align-self: start;
+        margin-inline-end: rem(10px);
+        font-size: rem(18px);
+        margin-block-end: 0;
+    }
+    .stars-container {
+        padding-block-start: rem(16px);
+    }
+    svg {
+        color: $starsColor;
+        align-self: center;
+    }
+    span {
+        align-self: center;
+        color: #ffb33e;
+        font-weight: 700;
+        font-size: rem(20px);
+        padding-inline-start: rem(5px);
+    }
+}
+
+.review-stats-container {
+    padding-block-end: 45px;
+    font-size: rem(20px);
+    display: flex;
+    justify-content: space-between;
+    .left-side-stats {
+        .progressses-ctonainer {
+            height: rem(30px);
+            margin: 0;
+            padding: 0;
+            width: rem(300px);
+            display: grid;
+            grid-template-columns: 0.95fr 3fr 1fr;
+            .progress-bar-container {
+                height: rem(8px);
+                background: #e4e5e7;
+                -moz-border-radius: rem(25px);
+                -webkit-border-radius: rem(25px);
+                border-radius: rem(25px);
+                box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0);
+                align-self: center;
+                .fit-progressbar-background {
+                    padding-top: rem(2px);
+                    height: 100%;
+                    background-color: #ffb33e !important;
+                    -moz-border-radius: rem(25px);
+                    -webkit-border-radius: rem(25px);
+                    border-radius: rem(25px);
+                }
+            }
+            span {
+                font-weight: 600;
+                font-size: rem(15px);
+                align-self: center;
+                color: #4a73e8;
+            }
+            p {
+                padding-inline-start: 0.8rem;
+                align-self: center;
+                font-weight: 500;
+                font-size: rem(16px);
+                align-self: center;
+                color: #4a73e8;
+            }
+            .bold {
+                font-weight: 700;
+            }
+        }
+        .less-visability {
+            color: $altColor !important;
+            opacity: 0.7;
+            span {
+                color: green;
+                opacity: 0.45 !important;
+            }
+        }
+    }
+
+    .right-side-stats {
+        display: flex;
+        flex-direction: column;
+        padding-block-start: rem(18px);
+        font-size: rem(12px);
+        h6 {
+            margin: 0;
+            margin-block-end: rem(10px);
+            font-weight: 600;
+            font-size: rem(15px);
+        }
+        span {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            color: #95979d;
+            padding-bottom: 0.519rem;
+            font-weight: 600;
+        }
+        .overview-content {
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.stars {
+    padding-block-start: rem(53.8px);
+    div {
+        margin-block-end: rem(6.45px);
+        display: flex;
+        div {
+            padding-block-start: rem(4px);
+        }
+        span {
+            color: #62646a;
+            white-space: nowrap;
+            margin-left: 12px;
+            padding-inline-end: rem(4px);
+            font-size: rem(15px);
+        }
+        svg {
+            color: $starsColor;
+            font-weight: 10rem;
+        }
+    }
+}
+
+@media screen and(max-width:1125px) {
+    .left-side-stats {
+        grid-template-columns: 0.7fr 2.1fr 0.7fr;
+        .progressses-ctonainer {
+            span {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1045px) {
+    .left-side-stats {
+        .progressses-ctonainer {
+            span {
+                font-weight: 600;
+                font-size: rem(15px);
+                align-self: center;
+                color: #4a73e8;
+            }
+        }
+    }
+}

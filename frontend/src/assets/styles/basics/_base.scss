@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $greenColor;
+    color: $lightColor;
+}
+
+body {
+    background-color: $lightColor;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+hr {
+    margin: 0 1rem;
+    padding: 0;
+    border: 0;
+    border-top: thin solid $borderColor;
+}
+
+#root.darkened .main-screen {
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-layout {
+    // max-width: 1400px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+
+    @media screen and (min-width: $smallLayout) {
+        max-width: $smallLayout;
+    }
+    @media screen and (min-width: $mediumLayout) {
+        max-width: $mediumLayout;
+    }
+    @media screen and (min-width: $wideLayout) {
+        max-width: $wideLayout;
+    }
+
+    // @media screen and (min-width: $mobileLayout) {
+    //     max-width: $mobileLayout;
+    // }
+
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 
+    minmax(0.6rem, 1fr)
+    minmax(auto, $wideLayout)
+    minmax(0.6rem, 1fr);
+    
+    & > * {
+        grid-column: 2;
+    }
+
+    @media screen and (min-width: $smallLayout) {
+        grid-template-columns: 
+        minmax(0.6rem, 1fr)
+        minmax(auto, $mobile-breakpoint)
+        minmax(0.6rem, 1fr);
+    }
+    @media screen and (min-width: $mediumLayout) {
+        grid-template-columns: 
+        minmax(0.6rem, 1fr)
+        minmax(auto, $narrow-breakpoint)
+        minmax(0.6rem, 1fr);
+    }
+    @media screen and (min-width: $wideLayout) {
+        grid-template-columns: 
+        minmax(0.6rem, 1fr)
+        minmax(auto, $normal-breakpoint)
+        minmax(0.6rem, 1fr);
+    }
+}

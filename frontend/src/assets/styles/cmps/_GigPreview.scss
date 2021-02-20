@@ -1,0 +1,144 @@
+.preview-item {
+
+    a, a:visited {
+        color: initial;
+        text-decoration: none;
+    }
+    .preview-inner {
+        &:hover .preview-title h2 {
+            color: $greenColor;
+        }
+        img {
+            transition: .2s;
+        }
+        &:hover img {
+            opacity: 0.7;
+        }
+        .preview-img {
+            background: #000;
+            @include aspect-ratio(16, 9);
+            opacity: 1;
+            transition: .2s;
+            margin-bottom: 0.75rem;
+            
+        }
+        
+        border: $border;
+        position: relative;
+
+        &:hover .clear-icon {
+            opacity: 1;
+        }
+        .clear-icon {
+            color: $darkColor;
+            position: absolute;
+            right: -10%;
+            top: -10%;
+            font-size: 2rem;
+            opacity: 0;
+
+            transition: .3s;
+        }
+
+        .gig-owner {
+            padding: 0rem 0.75rem 1rem;
+
+            p {
+                margin: 0;
+                color: $darkColor;
+                font-size: 0.8em;
+
+                &:first-of-type {
+                    font-weight: bold;
+                }
+            }
+            .gig-owner-text {
+                margin-inline-start: 0.5rem;
+                flex-direction: column;
+            }
+            img {
+                display: inline-block;
+                border-radius: 50%;
+                width: 2rem;
+                height: 2rem;
+                object-fit: cover;
+            }
+
+        }
+
+        .preview-title {
+
+            padding: 0rem 0.75rem 1rem;
+            h2 {
+                color: $titleColor;
+                font-size: 1.1rem;
+                font-weight: normal;
+                height: 2.4em;
+                margin: 0px;
+                transition: .2s;
+        
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+
+                &:hover {
+                    color: $greenColor;
+                }
+            }
+            
+        }
+
+        .gig-rating {
+            align-items: center;
+            padding: 0rem 0.75rem 0.75rem;
+            margin-inline-start: -0.15rem;
+            color: $starsColor;
+            span {
+                display: inline-block;
+                margin-top: 2px;
+                margin-inline-start: 5px;
+                font-size: 0.875rem;
+                font-weight: bold;
+            }
+            .gig-voters {
+                margin-inline-start: 0.125rem;
+                color: $iconsColor;
+                font-weight: normal;
+                font-size: 0.875rem;
+            }
+        }
+
+        .preview-bottom {
+            padding: 0.625rem 0.75rem;
+            border-top: $border;
+
+            h3 {
+                color: $priceColor;
+                margin: 0;
+                font-size: 0.85rem;
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+            span {
+                font-size: 1.1rem;
+            }
+
+            .heart {
+                color: $iconsColor;
+                transition: .2s;
+                &:hover {
+                    color: darken($iconsColor, 10);
+                }
+            }
+
+            .liked {
+                color: rgb(245, 41, 75);
+                &:hover {
+                    color: darken(rgb(245, 41, 75), 10);
+                }
+            }
+        }
+    
+    }
+}

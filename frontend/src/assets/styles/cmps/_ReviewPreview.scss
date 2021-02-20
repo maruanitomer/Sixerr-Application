@@ -1,0 +1,112 @@
+.review-card {
+    border-bottom: 1px solid #dadbdd;
+    .avatar-container {
+        margin-block-start: rem(27px);
+        padding-inline-end: 1rem;
+        .avatar {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .review-info {
+        padding-block-start: 1.25rem;
+        h5 {
+            margin: 0;
+            font-size: 16px;
+            line-height: 120%;
+            margin-right: 10px;
+            text-transform: capitalize;
+        }
+        .icons {
+            padding: 0.1rem;
+            padding-bottom: 0.9rem;
+            padding-top: 0.8rem;
+            span {
+                cursor: pointer;
+                font-weight: 600;
+                font-size: 15px;
+                cursor: pointer;
+                color: #555a5a;
+            }
+            padding: 0.8rem;
+            padding-inline-start: 0;
+            .helpful {
+                color: rgb(146, 146, 146);
+                padding: 0.1rem;
+                cursor: pointer;
+                margin-inline-end: 0.2px;
+            }
+            svg {
+                margin-inline-end: 0.2px;
+            }
+            .helpful-name {
+                cursor: pointer;
+                padding-inline-end: 1rem;
+            }
+            .thumb-down {
+                color: rgb(245, 0, 0);
+                color: rgb(146, 146, 146);
+                padding: 0.1rem;
+                cursor: pointer;
+            }
+        }
+        .rating {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #ffbf00;
+            font-weight: 700;
+        }
+        svg {
+            margin-inline-end: rem(5px);
+            color: #ffbf00;
+            font-weight: 700;
+        }
+        padding-block-end: rem(12px);
+    }
+    p {
+        margin: 0 !important;
+        margin-block-start: 0.5rem;
+        color: #404145;
+        font: 400 16px/24px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .published-at {
+        line-height: rem(21px);
+        font-size: rem(14px);
+        color: #95979d;
+        padding: rem(8px) 0;
+        font-weight: 600;
+        padding-bottom: 2px;
+        padding-top: 6px;
+    }
+    .country {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: rem(8px) 0px;
+        padding-block-start: 0.3rem;
+        padding: 0, 0, 3rem, 3rem;
+        span {
+            margin-inline-start: 10px;
+            color: #95979d;
+            font-size: rem(14px);
+            font-weight: 600;
+        }
+        > * {
+            padding: none !important;
+        }
+
+        .country-name {
+            margin: 0;
+            padding-inline-start: rem(5px);
+            text-transform: capitalize;
+        }
+    }
+    .star {
+        margin-inline-start: 0.4rem;
+        color: $starsColor;
+        font-size: 1.65rem !important;
+    }
+    .liked {
+        color: #4a73e8;
+    }
+}

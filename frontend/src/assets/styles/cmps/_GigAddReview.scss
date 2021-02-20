@@ -1,0 +1,47 @@
+.add-review-wrapper {
+    margin-bottom: rem(45px);
+    .star {
+        :hover {
+            cursor: pointer;
+            color: yellow;
+        }
+    }
+    .activeStar {
+        color: yellow;
+    }
+
+    .add-review {
+        @include defButton;
+        margin-block-start: 1.25rem;
+        box-sizing: border-box;
+        border: 1px solid #62646a;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 130px;
+        background-color: #2bbe76;
+        color: white;
+        font-weight: bold;
+        height: 2.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        transition: 0.2s;
+        background-color: white;
+        color: #62646a;
+        font-size: 0.9375rem;
+        padding-block-end: 0.125rem;
+        width: 100%;
+        margin-top: rem(12px);
+        &:hover {
+            color: #fff;
+            background: #7a7d85;
+        }
+    }
+    .text-area-container {
+        width: 100%;
+        resize: none;
+        textarea {
+            padding: 0.7rem;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.site-header {
+    background-color: $lightColor;
+    color: $headerColor;
+    border-bottom: $border;
+    
+    .app-header {
+        height: 100%;
+
+        a {
+            color: inherit;
+        }
+        h1 {
+            margin: 1rem 0;
+            color: $ctgColor;
+            font-size: 2rem;
+            // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: -1px;
+            font-weight: 900;
+            display: inline-block;
+            transition: .8s;
+            span {
+                color: $greenColor;
+            }
+        }
+        
+        ul {
+            height: 100%;
+            
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                text-decoration: none;
+                &:hover {
+                    // background-color: $lightColor;
+                    color: $greenColor;
+                }
+            }
+
+            li {
+                padding: 0px 10px;
+            }
+
+            img {
+                // margin-inline-start: 15px;
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+
+                display: inline-block;
+                border-radius: 50%;
+                overflow: hidden;
+                opacity: 1;
+                
+                transition: .3s;
+            }
+
+            .profile-img {
+                padding: 0px 0px 0 10px;
+            }
+        }
+    }
+    .msg-modal {
+        position: absolute;
+        z-index: 9;
+        opacity: 0;
+        padding: 1rem;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid $greenColor;
+        border-radius: 0.25rem;
+        background-color: #fff;
+
+        transition: 1.0s;
+        @media screen and (max-width: $smallLayout) {
+            width: 90vw;
+        }
+        h4 {
+            margin: 0 0 1rem;
+            color: $greenColor;
+        }
+        p {
+            color: $ctgColor;
+            margin: 0;
+            font-size: 0.875rem;
+        }
+    }
+}

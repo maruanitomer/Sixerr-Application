@@ -1,0 +1,93 @@
+.sidebar {
+    background-color: white;
+    width: 95%;
+    margin-left: 20px;
+    height: -webkit-fill-available;
+    position: sticky;
+    border: 1px solid rgb(202, 202, 202);
+    top: 3rem;
+    h3 {
+        font-size: rem(16px);
+        margin: 0;
+        margin-block-end: 2rem;
+    }
+    .delivery {
+        margin-inline-end: 0.9rem;
+    }
+    .revisions {
+        margin-bottom: 10px;
+    }
+    .features {
+        margin-block-start: 0.6rem;
+        color: #62646a;
+    }
+    .package-content {
+        padding-block-start: rem(24px);
+        padding-inline-start: rem(24px);
+        padding-inline-end: rem(24px);
+        padding-block-end: rem(24px);
+        div {
+            color: #404145;
+            span {
+                font-size: rem(18.5px);
+            }
+            p {
+                color: #62646a;
+            }
+        }
+    }
+    .btns-container {
+        margin-block-start: 2rem;
+        a {
+            width: 100%;
+            cursor: pointer;
+            &:hover {
+                background: #19a463 !important;
+                border-radius: 4.5px;
+            }
+        }
+        .continue {
+            background-color: $boldColor;
+            color: $lightColor;
+            width: 100%;
+            display: inline-block;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            position: relative;
+            padding: 12px 24px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            -webkit-transition: 0.15s ease-in-out;
+            -o-transition: 0.15s ease-in-out;
+            transition: 0.15s ease-in-out;
+            &:hover {
+                background-color: #19a463;
+            }
+        }
+    }
+
+    .icons {
+        font-size: rem(13.5px);
+        color: rgb(97, 97, 97);
+        font-weight: bold;
+        .clock {
+            align-self: center;
+            margin-inline-end: rem(8px);
+        }
+        .loop {
+            align-self: center;
+            margin-inline-end: rem(8px);
+        }
+    }
+
+    .include {
+        margin-inline-end: 0.5rem;
+        color: #1dbf73;
+    }
+}

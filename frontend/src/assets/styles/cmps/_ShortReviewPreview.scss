@@ -1,0 +1,69 @@
+.short-content {
+    display: inline-table;
+    width: rem(630.703px);
+    width: rem(535px);
+    height: 100%;
+    .content-wrapper {
+        padding-inline-start: rem(30px);
+        padding-block-start: rem(8px);
+    }
+    p {
+        width: 90%;
+        margin: 0;
+        margin-block-end: 0.32rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin-block-end: 0;
+        padding-inline-start: rem(86.5px);
+        padding-block-end: rem(4.3px);
+    }
+    .content {
+        .country-icon {
+            margin-inline-start: rem(12px);
+            font-size: rem(18px);
+        }
+        margin-block-start: 0.6rem;
+        .country-name {
+            margin: 0;
+            padding-inline-start: rem(8px);
+            font-weight: 600;
+            color: #95979d; //remove this color
+            font: 400 16px/24px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif; //remove this font later
+            text-transform: capitalize;
+        }
+        .star-icon {
+            margin-inline-start: rem(9px);
+            color: #ffbf00;
+            font-weight: 700;
+        }
+        h6 {
+            color: #404145;
+            margin: 0;
+            font-size: rem(16px);
+            text-transform: capitalize;
+        }
+        .rating {
+            color: $starsColor;
+            font-weight: 700;
+            font-size: rem(16px);
+            padding-inline-start: rem(5px);
+        }
+        .star {
+            padding-block-end: rem(1.5px);
+        }
+        margin-block-start: 0;
+    }
+    .avatar-container {
+        .MuiAvatar-root {
+            width: rem(32px);
+            height: rem(32px);
+        }
+        margin-block-start: rem(13px);
+        margin-inline-end: rem(25px);
+    }
+    p{
+        color: #62646a;
+    }
+}
+

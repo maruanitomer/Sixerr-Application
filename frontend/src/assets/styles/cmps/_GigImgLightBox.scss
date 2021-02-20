@@ -1,0 +1,67 @@
+.img-light-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    img {
+        object-fit: cover;
+    }
+    .close-light-box {
+        position: absolute;
+        font-size: 3rem;
+        transform: translateY(-100%);
+        color: #fff;
+        cursor: pointer;
+        transition: color 0.1s ease;
+        &:hover {
+            color: $boldColor;
+        }
+    }
+    & div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .next-img {
+        position: absolute;
+        background-color: rgba(253, 253, 253, 0);
+        color: white;
+        font-size: 3rem;
+        top: 50%;
+        right: -10%;
+        &:hover {
+            color: $boldColor;
+            cursor: pointer;
+        }
+    }
+    .prev-img {
+        position: absolute;
+        background-color: rgba(253, 253, 253, 0);
+        top: 50%;
+        background-color: rgba(253, 253, 253, 0);
+        color: white;
+        left: -10%;
+        font-size: 3rem;
+        &:hover {
+            color: $boldColor;
+            cursor: pointer;
+        }
+    }
+}
+
+.example-img {
+    position: absolute;
+    z-index: 5;
+    width: 500px;
+    height: 500px;
+}
+
+.x {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
